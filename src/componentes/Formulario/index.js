@@ -24,17 +24,25 @@ const Formulario = (props) => {
     return (
         <section className="formulario">
             <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados para criar o card do colaborador</h2>
+                <h2>Qual é o seu Dream Team da NBA?</h2>
+                <h2>Preencha os dados dos seus jogadores favoritos e monte o melhor time de todos os tempos:</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label="Nome"
-                    placeholder="Digite seu nome" 
+                    placeholder="Digite o nome" 
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}
                 />
+                <ListaSuspensa
+                    obrigatorio={true}
+                    label="Posição"
+                    itens={props.times}
+                    valor={time}
+                    aoAlterado={valor => setTime(valor)}
+                />
                 <CampoTexto
                     obrigatorio={true}
-                    label="Cargo"
+                    label="Posição"
                     placeholder="Digite seu cargo"
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}

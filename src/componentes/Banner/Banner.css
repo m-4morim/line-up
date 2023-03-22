@@ -1,8 +1,25 @@
 .banner {
-    background-color: ;
     text-align: center;
 }
 
 .banner img {
     max-width: 100%;
+}
+
+.banner-logo {
+    height: 25px;
+}
+
+.banner-logo img {
+    max-width: 8%;
+}
+
+@media screen and (max-width: 820px) {
+    .banner-logo {
+        height: 5px;
+    }
+
+    .banner-logo img {
+        max-width: 15%;
+    }
 }
