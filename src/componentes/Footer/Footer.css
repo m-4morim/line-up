@@ -3,9 +3,21 @@
     background-color: #000000;
 }
 
-.footer img {
+.footer h4 {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-link img {
+    width: 30px;
+}
+
+.footer-img {
     max-width: 700px;
-    padding: 8em;
-    padding-bottom: 4em;
-    border-radius: 150px;
+    padding: 4em, 8em;
+    border-radius: 15px;
+}
+
+.footer h4 div {
+    display: inline;
 }
