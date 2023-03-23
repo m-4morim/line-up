@@ -6,8 +6,8 @@ export const Footer = () => {
         <footer className="footer">
             <div className="footer-texto">
                 <p>Criado por @Marcos Amorim - </p>
-                <img src="/imagens/github-logo.jpg" alt="GitHub"/>
                 <a href="https://github.com/m-4morim/line-up">
+                    <img src="/imagens/github-logo.jpg" alt="GitHub"/>
                     <p> GitHub</p>
                 </a>
             </div>
