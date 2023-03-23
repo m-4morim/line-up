@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
-import Time from './componentes/Time';
+import Posicao from './componentes/Time';
 import Footer from './componentes/Footer';
 
 function App() {
 
-  const times = [
+  const posicoes = [
     {
       nome: 'Guard',
       corPrimaria: '#CD0404',
@@ -34,24 +34,24 @@ function App() {
     },
   ]
   
-  const [colaboradores, setColaboradores] = useState([])
+  const [jogadores, setJogadores] = useState([])
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
-    console.log(colaborador)
-    setColaboradores([...colaboradores, colaborador])
+  const aoNovoJogadorAdicionado = (jogador) => {
+    console.log(jogador)
+    setJogadores([...jogadores, jogador])
   }
   
   return (
     <div className="App">
       <Banner />
-      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
+      <Formulario posicoes={posicoes.map(posicao => posicao.nome)} aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)}/>
 
-      {times.map(time => <Time
-        key={time.nome}
-        nome={time.nome}
-        corPrimaria={time.corPrimaria}
-        corSecundaria={time.corSecundaria}
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+      {posicoes.map(posicao => <Posicao
+        key={posicao.nome}
+        nome={posicao.nome}
+        corPrimaria={posicao.corPrimaria}
+        corSecundaria={posicao.corSecundaria}
+        jogadores={jogadores.filter(jogador => jogador.posicao === posicao.nome)}
       />)}
       
       <Footer />

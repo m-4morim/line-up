@@ -7,17 +7,17 @@ import './Formulario.css'
 const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
-    const [cargo, setCargo] = useState('')
+    const [equipe, setEquipe] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
+    const [posicao, setPosicao] = useState('')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoColaboradorCadastrado({
+        props.aoJogadorCadastrado({
             nome,
-            cargo,
+            equipe,
             imagem,
-            time
+            posicao
         })
     }
 
@@ -35,10 +35,10 @@ const Formulario = (props) => {
                 />
                 <CampoTexto
                     obrigatorio={true}
-                    label="Posição"
-                    placeholder="Digite seu cargo"
-                    valor={cargo}
-                    aoAlterado={valor => setCargo(valor)}
+                    label="Equipe"
+                    placeholder="Digite a equipe que ele jogou(a)"
+                    valor={equipe}
+                    aoAlterado={valor => setEquipe(valor)}
                 />
                 <CampoTexto
                     label="Imagem"
@@ -48,10 +48,10 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa
                     obrigatorio={true}
-                    label="Time"
-                    itens={props.times}
-                    valor={time}
-                    aoAlterado={valor => setTime(valor)}
+                    label="Posição"
+                    itens={props.posicoes}
+                    valor={posicao}
+                    aoAlterado={valor => setPosicao(valor)}
                 />
                 <Botao texto="Criar Equipe"/>
             </form>

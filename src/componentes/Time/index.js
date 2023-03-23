@@ -1,18 +1,18 @@
-import Colaborador from '../Colaborador'
+import Jogador from '../Jogador'
 import './Time.css'
 
-const Time = (props) => {
+const Posicao = (props) => {
 
     const css = { backgroundColor: props.corSecundaria }
 
     return (
-        <section className='time' style={css}>
+        <section className='posicao' style={css}>
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
-            <div className='colaboradores'>
-                {props.colaboradores.map( colaborador => <Colaborador nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem}/> )}
+            <div className='jogadores'>
+                {props.jogadores.map( jogador => <Jogador nome={jogador.nome} equipe={jogador.equipe} imagem={jogador.imagem}/> )}
             </div>
         </section>
     )
 }
 
-export default Time
+export default Posicao
