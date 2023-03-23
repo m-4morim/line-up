@@ -33,13 +33,6 @@ const Formulario = (props) => {
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}
                 />
-                <ListaSuspensa
-                    obrigatorio={true}
-                    label="Posição"
-                    itens={props.times}
-                    valor={time}
-                    aoAlterado={valor => setTime(valor)}
-                />
                 <CampoTexto
                     obrigatorio={true}
                     label="Posição"
