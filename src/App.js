@@ -9,28 +9,28 @@ function App() {
   const times = [
     {
       nome: 'Guard',
-      corPrimaria: '#57C278',
-      corSecundaria: '#D9F7E9'
+      corPrimaria: '#CD0404',
+      corSecundaria: '#F5EAEA'
     },
     {
       nome: 'Guard-Forward',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
+      corPrimaria: '#144272',
+      corSecundaria: '#ECF9FF'
     },
     {
       nome: 'Forward',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2'
+      corPrimaria: '#CD0404',
+      corSecundaria: '#F5EAEA'
     },
     {
       nome: 'Center-Forward',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      corPrimaria: '#144272',
+      corSecundaria: '#ECF9FF'
     },
     {
       nome: 'Center',
-      corPrimaria: '#FDA65D',
-      corSecundaria: '#FFDCB8'
+      corPrimaria: '#CD0404',
+      corSecundaria: '#F5EAEA'
     },
   ]
   
