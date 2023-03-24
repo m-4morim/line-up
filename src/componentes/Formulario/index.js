@@ -25,7 +25,7 @@ const Formulario = (props) => {
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Qual é o seu <strong className="texto-destaque">Dream Team</strong> da NBA?</h2>
-                <h2>Preencha os dados dos seus jogadores favoritos e monte o melhor time de todos os tempos:</h2>
+                <h2>Preencha os dados dos seus jogadores favoritos e monte o seu melhor time de todos os tempos:</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label="Nome"

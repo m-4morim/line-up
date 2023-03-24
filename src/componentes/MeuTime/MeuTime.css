@@ -2,6 +2,8 @@
     display: inline-block;
     width: 20%;
     height: 30em;
+
+    overflow: hidden;
 }
 
 .meu-time img {
@@ -9,4 +11,14 @@
     object-fit: cover;
     object-position: center center;
     width: 100%;
+    transition: .5s all ease-in-out;
+}
+
+.meu-time img:hover {
+    transform: scale(1.05);
+}
+
+
+.legenda {
+    border-left: 5px solid gray;
 }
