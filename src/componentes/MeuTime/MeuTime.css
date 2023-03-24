@@ -1,0 +1,12 @@
+.meu-time {
+    display: inline-block;
+    width: 20%;
+    height: 30em;
+}
+
+.meu-time img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Posicao from './componentes/Posicao';
+import MeuTime from './componentes/MeuTime';
 import Footer from './componentes/Footer';
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
         jogadores={jogadores.filter(jogador => jogador.posicao === posicao.nome)}
       />)}
       
+      <MeuTime />
       <Footer />
     </div>
   );
