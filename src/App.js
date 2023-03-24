@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
-import Posicao from './componentes/Time';
+import Posicao from './componentes/Posicao';
 import Footer from './componentes/Footer';
 
 function App() {

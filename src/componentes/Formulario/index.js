@@ -53,7 +53,7 @@ const Formulario = (props) => {
                     valor={posicao}
                     aoAlterado={valor => setPosicao(valor)}
                 />
-                <Botao texto="Criar Equipe"/>
+                <Botao texto="Adicionar Jogador"/>
             </form>
         </section>
     )

@@ -1,5 +1,5 @@
 import Jogador from '../Jogador'
-import './Time.css'
+import './Posicao.css'
 
 const Posicao = (props) => {
 
