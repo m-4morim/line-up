@@ -26,7 +26,7 @@ const MeuTime = () => {
                 <p>Shaquille O'Neal</p>
             </div>
 
-            <blockquote className="legenda">Essa seria a minha line-up</blockquote>
+            <p className="meu-time-texto">Essa seria minha sugestão de escolha. E aí, será que seria um bom jogo?</p>
 
         </section>
     )
