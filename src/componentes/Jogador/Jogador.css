@@ -7,7 +7,7 @@
     border-radius: 10px 10px 0px 0px;
 }
 .jogador img {
-    width: 100px;
+    width: 175px;
     border-radius: 50%;
     position: relative;
     bottom: -50px;
@@ -22,7 +22,7 @@
 }
 
 .jogador .rodape h4 {
-    color: #6278F7;
+    color: #F94A29;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;

@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+.meu-time p {
+    color: black;
+}
+
 .meu-time img {
     height: 100%;
     object-fit: cover;

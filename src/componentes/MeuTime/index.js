@@ -15,12 +15,15 @@ const MeuTime = () => {
             </div>
             <div className="meu-time"> 
                 <img src="/imagens/jogadores/KobeBryant.jpg" alt="Kobe Bryant" />
+                <p>Kobe Bryant</p>
             </div>
             <div className="meu-time">
                 <img src="/imagens/jogadores/LeBronJames.jpg" alt="LeBron James" />
+                <p>LeBron James</p>
             </div>
             <div className="meu-time">
                 <img src="/imagens/jogadores/ShaquilleO'Neal.jpg" alt="Shaquille O'Neal" />
+                <p>Shaquille O'Neal</p>
             </div>
 
             <blockquote className="legenda">Essa seria a minha line-up</blockquote>
