@@ -19,7 +19,6 @@
 .meu-time img {
     height: 100%;
     object-fit: cover;
-    object-position: center center;
     width: 100%;
     transition: .5s all ease-in-out;
     opacity: 60%;
@@ -34,4 +33,10 @@
     text-align: center;
     font-weight: 700;
     font-size: 18px;
+}
+
+@media screen and (max-width: 820px) {
+    .meu-time p {
+        display: none;
+    }
 }
