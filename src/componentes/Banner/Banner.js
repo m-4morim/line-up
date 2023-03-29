@@ -10,7 +10,7 @@ export const Banner = () => {
                     <img src="/imagens/banner.jpg" alt="Disputa por uma jogada na NBA" />
                 </div>
                 <div className="banner-logo">
-                    <img src="/imagens/logo.jpg" alt="Logo da NBA" />
+                    <img src="/imagens/nba-logo.jpg" alt="Logo da NBA" />
                 </div>
             </header>
         </>
