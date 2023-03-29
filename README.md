@@ -7,10 +7,10 @@
    <img src="https://img.shields.io/badge/deploy-online-brightgreen?logo=vercel"/>
   </div><br>
 
-![Print](./images/print.png)
-  <blockquote>Projeto construído em uma resolução de tela desktop 2560px por 1080px, porém possui design responsivo de acordo com o dispositivo.</blockquote><br>
+![Print](./public/imagens/print.png)
+  <blockquote>Projeto construído em uma resolução de tela desktop 2560px por 1080, porém possui design responsivo de acordo com o dispositivo.</blockquote><br>
 
-  <p>Meu propósito nesse projeto se baseou na interatividade do usuário, onde eu o convido para inserir dados no input e assim alterar a estrutura da página.</p>
+  <p>Meu propósito nesse projeto se baseou na interatividade do usuário, onde eu o convido para inserir dados no input e assim alterar a estrutura da página com a criação de cards.</p>
   <p>Utilizando o React, a participação do usuário se torna flúida e dinâmica, modificando apenas o fragmento específico ligado à funcionalidade implementada.</p>
 
 ##
@@ -35,7 +35,7 @@
   </div>
   <div align="center">
    <p>⚡ Deploy do projeto:</p>
-   <a href="">
+   <a href="https://team-line-up.vercel.app">
     <img alt="Logo-Vercel" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
    </a>
   </div><br>
@@ -43,6 +43,6 @@
  
  ##
  <footer>
-  <p>O próximo passo é implementar patterns e refatorar o código para renderizar e manipular o DOM com React.</p>
+  <p>O próximo passo é implementar algumas outras funcionalidades, como a opção de editar e deletar um card após criado. Além disso, criar o input 'equipe' com opções selecionáveis de times já com a configuração específica do card (cores e escudo).</p>
  </footer>
 </html>
