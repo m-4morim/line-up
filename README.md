@@ -11,7 +11,7 @@
   <blockquote>Projeto construído em uma resolução de tela desktop 2560px por 1080, porém possui design responsivo de acordo com o dispositivo.</blockquote><br>
 
   <p>Meu propósito nesse projeto se baseou na interatividade do usuário, onde eu o convido para inserir dados no input e assim alterar a estrutura da página com a criação de cards.</p>
-  <p>Utilizando o React, a participação do usuário se torna flúida e dinâmica, modificando apenas o fragmento específico ligado à funcionalidade implementada.</p>
+  <p>Utilizando o React, a participação do usuário se torna fluída e dinâmica, modificando apenas o fragmento específico ligado à funcionalidade implementada.</p>
 
 ##
   <div align="center">
