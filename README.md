@@ -35,7 +35,7 @@
   </div>
   <div align="center">
    <p>⚡ Deploy do projeto:</p>
-   <a href="https://validity-state.vercel.app">
+   <a href="">
     <img alt="Logo-Vercel" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
    </a>
   </div><br>

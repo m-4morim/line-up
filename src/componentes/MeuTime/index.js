@@ -6,23 +6,23 @@ const MeuTime = () => {
         <section>
 
             <div className="meu-time">
-                <img src="/imagens/jogadores/JohnStockton.jpg" alt="John Stockton" />
+                <img src="./imagens/jogadores/JohnStockton.jpg" alt="John Stockton" />
                 <p>John Stockton</p>
             </div>
             <div className="meu-time">
-                <img src="/imagens/jogadores/AllenIverson.jpg" alt="Allen Iverson" />
+                <img src="./imagens/jogadores/AllenIverson.jpg" alt="Allen Iverson" />
                 <p>Allen Iverson</p>
             </div>
             <div className="meu-time"> 
-                <img src="/imagens/jogadores/KobeBryant.jpg" alt="Kobe Bryant" />
+                <img src="./imagens/jogadores/KobeBryant.jpg" alt="Kobe Bryant" />
                 <p>Kobe Bryant</p>
             </div>
             <div className="meu-time">
-                <img src="/imagens/jogadores/LeBronJames.jpg" alt="LeBron James" />
+                <img src="./imagens/jogadores/LeBronJames.jpg" alt="LeBron James" />
                 <p>LeBron James</p>
             </div>
             <div className="meu-time">
-                <img src="/imagens/jogadores/ShaquilleO'Neal.jpg" alt="Shaquille O'Neal" />
+                <img src="./imagens/jogadores/ShaquilleO'Neal.jpg" alt="Shaquille O'Neal" />
                 <p>Shaquille O'Neal</p>
             </div>
 
