@@ -9,7 +9,6 @@ const Posicao = ({ posicao, jogadores, aoDeletar }) => {
             <h3 style={{ borderColor: posicao.corPrimaria }}>{posicao.nome}</h3>
             <div className='jogadores'>
                 {jogadores.map((jogador, indice) => {
-                    console.log(<Jogador key={indice} jogador={jogador} corDeFundo={posicao.corPrimaria} aoDeletar={aoDeletar} />);
                     return <Jogador key={indice} jogador={jogador} corDeFundo={posicao.corPrimaria} aoDeletar={aoDeletar} />;
                 })}
             </div>

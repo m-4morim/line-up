@@ -1,7 +1,8 @@
 import './Jogador.css'
 
-const Jogador = ({ jogador, corDeFundo }) => {
+const Jogador = ({ jogador, corDeFundo, aoDeletar }) => {
     return (<div className='jogador'>
+        <div className='deletar' onClick={aoDeletar}>deletar</div>
         <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
             <img src={jogador.imagem} alt={jogador.nome}/>
         </div>
