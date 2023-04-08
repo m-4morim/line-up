@@ -41,19 +41,25 @@ function App() {
     debugger
     setJogadores([...jogadores, jogador])
   }
+
+  function deletarJogador() {
+    console.log('Deletando jogador');
+  }
   
   return (
     <div className="App">
       <Banner />
       <Formulario posicoes={posicoes.map(posicao => posicao.nome)} aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)}/>
 
-      {posicoes.map(posicao => <Posicao
-        key={posicao.nome}
-        nome={posicao.nome}
-        corPrimaria={posicao.corPrimaria}
-        corSecundaria={posicao.corSecundaria}
-        jogadores={jogadores.filter(jogador => jogador.posicao === posicao.nome)}
-      />)}
+      {posicoes.map((posicao, indice) =>
+        <Posicao
+          key={indice}
+          posicao={posicao}
+          jogadores={jogadores.filter(jogador => jogador.posicao
+          === posicao.nome)}
+          aoDeletar={deletarJogador}
+        />
+      )}
       
       <MeuTime />
       <Footer />

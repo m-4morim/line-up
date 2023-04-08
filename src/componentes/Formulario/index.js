@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
-const Formulario = (props) => {
+const Formulario = ({aoJogadorCadastrado, posicoes}) => {
 
     const [nome, setNome] = useState('')
     const [equipe, setEquipe] = useState('')
@@ -13,7 +13,7 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoJogadorCadastrado({
+        aoJogadorCadastrado({
             nome,
             equipe,
             imagem,
@@ -53,7 +53,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true}
                     label="Posição"
-                    itens={props.posicoes}
+                    itens={posicoes}
                     valor={posicao}
                     aoAlterado={valor => setPosicao(valor)}
                 />
