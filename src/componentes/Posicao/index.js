@@ -9,8 +9,8 @@ const Posicao = (props) => {
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
             <div className='jogadores'>
                 {props.jogadores.map( jogador => {
-                    console.log('renderizando jogador');
-                    return <Jogador corDeFundo={props.corPrimaria} key={jogador.nome} nome={jogador.nome} equipe={jogador.equipe} imagem={jogador.imagem}/>
+                    console.log(<Jogador corDeFundo={props.corPrimaria} key={jogador.nome} nome={jogador.nome} equipe={jogador.equipe} imagem={jogador.imagem} aoDeletar={() => {}} />);
+                    return <Jogador corDeFundo={props.corPrimaria} key={jogador.nome} nome={jogador.nome} equipe={jogador.equipe} imagem={jogador.imagem} aoDeletar={() => {}} />;
                 })}
             </div>
         </section>
