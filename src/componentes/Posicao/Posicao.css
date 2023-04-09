@@ -1,4 +1,5 @@
 .posicao {
+    position: relative;
     text-align: center;
     padding: 32px;
 }
@@ -15,4 +16,10 @@
     justify-content: space-around;
     margin-top: 32px;
     flex-wrap: wrap;
+}
+
+.input-cor {
+    position: absolute;
+    top: 20px;
+    right: 50px;
 }
