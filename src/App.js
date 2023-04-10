@@ -7,7 +7,7 @@ import Footer from './componentes/Footer';
 
 function App() {
 
-  const posicoes = [
+  const [posicoes, setPosicoes] = useState([
     {
       nome: 'Guard',
       corPrimaria: '#CD0404',
@@ -33,7 +33,7 @@ function App() {
       corPrimaria: '#CD0404',
       corSecundaria: '#F5EAEA'
     },
-  ]
+  ]);
   
   const [jogadores, setJogadores] = useState([])
 
@@ -45,6 +45,15 @@ function App() {
   function deletarJogador() {
     console.log('Deletando jogador');
   }
+
+  function mudarCorDaPosicao(cor, nome) {
+    setPosicoes(posicoes.map(posicao => {
+      if(posicao.nome == nome) {
+        posicao.corSecundaria = cor;
+      }
+      return posicao;
+    }));
+  }
   
   return (
     <div className="App">
@@ -53,6 +62,7 @@ function App() {
 
       {posicoes.map((posicao, indice) =>
         <Posicao
+          mudarCor={mudarCorDaPosicao}
           key={indice}
           posicao={posicao}
           jogadores={jogadores.filter(jogador => jogador.posicao
