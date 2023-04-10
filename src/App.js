@@ -10,28 +10,23 @@ function App() {
   const [posicoes, setPosicoes] = useState([
     {
       nome: 'Guard',
-      corPrimaria: '#CD0404',
-      corSecundaria: '#F5EAEA'
+      cor: '#CD0404',
     },
     {
       nome: 'Guard-Forward',
-      corPrimaria: '#144272',
-      corSecundaria: '#ECF9FF'
+      cor: '#144272',
     },
     {
       nome: 'Forward',
-      corPrimaria: '#CD0404',
-      corSecundaria: '#F5EAEA'
+      cor: '#CD0404',
     },
     {
       nome: 'Center-Forward',
-      corPrimaria: '#144272',
-      corSecundaria: '#ECF9FF'
+      cor: '#144272',
     },
     {
       nome: 'Center',
-      corPrimaria: '#CD0404',
-      corSecundaria: '#F5EAEA'
+      cor: '#CD0404',
     },
   ]);
   
@@ -49,7 +44,7 @@ function App() {
   function mudarCorDaPosicao(cor, nome) {
     setPosicoes(posicoes.map(posicao => {
       if(posicao.nome == nome) {
-        posicao.corSecundaria = cor;
+        posicao.cor = cor;
       }
       return posicao;
     }));
