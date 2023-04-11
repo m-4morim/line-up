@@ -7,11 +7,11 @@ const Posicao = ({ posicao, jogadores, aoDeletar, mudarCor }) => {
     const css = { backgroundColor: hexToRgba(posicao.cor, '0.6') }
     return (
         (jogadores.length > 0) ? <section className='posicao' style={css}>
-            <input onChange={evento => mudarCor(evento.target.value, posicao.nome)} value={posicao.cor} type='color' className='input-cor' />
+            <input onChange={evento => mudarCor(evento.target.value, posicao.id)} value={posicao.cor} type='color' className='input-cor' />
             <h3 style={{ borderColor: posicao.cor }}>{posicao.nome}</h3>
             <div className='jogadores'>
                 {jogadores.map((jogador, indice) => {
-                    return <Jogador key={indice} jogador={jogador} corDeFundo={posicao.corPrimaria} aoDeletar={aoDeletar} />;
+                    return <Jogador key={indice} jogador={jogador} corDeFundo={posicao.cor} aoDeletar={aoDeletar} />;
                 })}
             </div>
         </section>

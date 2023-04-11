@@ -4,27 +4,33 @@ import Formulario from './componentes/Formulario';
 import Posicao from './componentes/Posicao';
 import MeuTime from './componentes/MeuTime';
 import Footer from './componentes/Footer';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
   const [posicoes, setPosicoes] = useState([
     {
+      id: uuidv4(),
       nome: 'Guard',
       cor: '#CD0404',
     },
     {
+      id: uuidv4(),
       nome: 'Guard-Forward',
       cor: '#144272',
     },
     {
+      id: uuidv4(),
       nome: 'Forward',
       cor: '#CD0404',
     },
     {
+      id: uuidv4(),
       nome: 'Center-Forward',
       cor: '#144272',
     },
     {
+      id: uuidv4(),
       nome: 'Center',
       cor: '#CD0404',
     },
@@ -41,9 +47,9 @@ function App() {
     console.log('Deletando jogador');
   }
 
-  function mudarCorDaPosicao(cor, nome) {
+  function mudarCorDaPosicao(cor, id) {
     setPosicoes(posicoes.map(posicao => {
-      if(posicao.nome == nome) {
+      if(posicao.id == id) {
         posicao.cor = cor;
       }
       return posicao;
