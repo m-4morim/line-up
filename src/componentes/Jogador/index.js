@@ -3,7 +3,11 @@ import './Jogador.css'
 
 const Jogador = ({ jogador, corDeFundo, aoDeletar }) => {
     return (<div className='jogador'>
-        <AiFillCloseCircle size={25} className='deletar' onClick={aoDeletar} />
+        <AiFillCloseCircle
+            size={25}
+            className='deletar'
+            onClick={() => aoDeletar(jogador.id)}
+        />
         <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
             <img src={jogador.imagem} alt={jogador.nome}/>
         </div>

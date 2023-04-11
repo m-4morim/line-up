@@ -43,8 +43,8 @@ function App() {
     setJogadores([...jogadores, jogador])
   }
 
-  function deletarJogador() {
-    console.log('Deletando jogador');
+  function deletarJogador(id) {
+    setJogadores(jogadores.filter(jogador => jogador.id !== id));
   }
 
   function mudarCorDaPosicao(cor, id) {
