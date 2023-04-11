@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
-const Formulario = ({aoJogadorCadastrado, posicoes}) => {
+const Formulario = ({ aoJogadorCadastrado, posicoes, cadastrarBanco }) => {
 
     const [nome, setNome] = useState('')
     const [equipe, setEquipe] = useState('')
@@ -31,7 +31,7 @@ const Formulario = ({aoJogadorCadastrado, posicoes}) => {
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Qual é o seu <strong className="texto-destaque">Dream Team</strong> da NBA?</h2>
-                <h2>Preencha os dados dos seus jogadores favoritos e monte o seu melhor time de todos os tempos:</h2>
+                <h2>Preencha os dados dos seus jogadores favoritos e monte o melhor time de todos os tempos:</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label="Nome"
@@ -61,21 +61,24 @@ const Formulario = ({aoJogadorCadastrado, posicoes}) => {
                 />
                 <Botao texto="Adicionar Jogador"/>
             </form>
-            <form onSubmit={aoSalvar}>
-                <h2>Qual é o seu <strong className="texto-destaque">Dream Team</strong> da NBA?</h2>
-                <h2>Preencha também os dados de um treinador ou jogadores reservas:</h2>
+            <form onSubmit={(evento) => {
+                evento.preventDefault()
+                cadastrarBanco({ nome: nomeBanco, cor: corEquipe })
+            }}>
+                <h2>E quem mais faria parte do elenco?</h2>
+                <h2>Adicione também um treinador e/ou jogadores reservas, selecionando-os ao lado:</h2>
                 <CampoTexto
                     obrigatorio
-                    label="Nome"
-                    placeholder="Digite o nome" 
-                    valor={nome}
+                    label="Elenco"
+                    placeholder="Digite Treinador ou Jogadores Reservas" 
+                    valor={nomeBanco}
                     aoAlterado={valor => setNomeBanco(valor)}
                 />
                 <CampoTexto
                     obrigatorio
                     label="Cor"
-                    placeholder="Digite a cor da equipe em que ele jogou(a)"
-                    valor={equipe}
+                    placeholder="Digite a cor desejada da equipe fora da quadra"
+                    valor={corEquipe}
                     aoAlterado={valor => setCorEquipe(valor)}
                 />
                 <Botao texto="Adicionar Treinador ou Jogador"/>
