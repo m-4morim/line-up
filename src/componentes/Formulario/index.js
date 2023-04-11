@@ -10,6 +10,8 @@ const Formulario = ({aoJogadorCadastrado, posicoes}) => {
     const [equipe, setEquipe] = useState('')
     const [imagem, setImagem] = useState('')
     const [posicao, setPosicao] = useState('')
+    const [nomeBanco, setNomeBanco] = useState('')
+    const [corEquipe, setCorEquipe] = useState('')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
@@ -58,6 +60,25 @@ const Formulario = ({aoJogadorCadastrado, posicoes}) => {
                     aoAlterado={valor => setPosicao(valor)}
                 />
                 <Botao texto="Adicionar Jogador"/>
+            </form>
+            <form onSubmit={aoSalvar}>
+                <h2>Qual é o seu <strong className="texto-destaque">Dream Team</strong> da NBA?</h2>
+                <h2>Preencha também os dados de um treinador ou jogadores reservas:</h2>
+                <CampoTexto
+                    obrigatorio
+                    label="Nome"
+                    placeholder="Digite o nome" 
+                    valor={nome}
+                    aoAlterado={valor => setNomeBanco(valor)}
+                />
+                <CampoTexto
+                    obrigatorio
+                    label="Cor"
+                    placeholder="Digite a cor da equipe em que ele jogou(a)"
+                    valor={equipe}
+                    aoAlterado={valor => setCorEquipe(valor)}
+                />
+                <Botao texto="Adicionar Treinador ou Jogador"/>
             </form>
         </section>
     )

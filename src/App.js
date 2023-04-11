@@ -59,7 +59,10 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario posicoes={posicoes.map(posicao => posicao.nome)} aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)}/>
+      <Formulario
+        posicoes={posicoes.map(posicao => posicao.nome)}
+        aoJogadorCadastrado={jogador => aoNovoJogadorAdicionado(jogador)}
+      />
 
       {posicoes.map((posicao, indice) =>
         <Posicao
