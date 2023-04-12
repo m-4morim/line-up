@@ -1,6 +1,6 @@
-import './CampoTexto.css'
+import './Campo.css'
 
-const CampoTexto = ({ label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
+const Campo = ({ label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
 
     const placeholderModificada = `${placeholder}`
 
@@ -9,7 +9,7 @@ const CampoTexto = ({ label, placeholder, valor, aoAlterado, obrigatorio = false
     }
 
     return (
-        <div className="campo-texto">
+        <div className="campo">
             <label>
                 {label}
             </label>
@@ -18,4 +18,4 @@ const CampoTexto = ({ label, placeholder, valor, aoAlterado, obrigatorio = false
     )
 }
 
-export default CampoTexto
+export default Campo

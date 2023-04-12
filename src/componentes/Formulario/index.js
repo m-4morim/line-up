@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Botao from '../Botao'
-import CampoTexto from '../CampoTexto'
+import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
@@ -32,21 +32,21 @@ const Formulario = ({ aoJogadorCadastrado, posicoes, cadastrarBanco }) => {
             <form onSubmit={aoSalvar}>
                 <h2>Qual é o seu <strong className="texto-destaque">Dream Team</strong> da NBA?</h2>
                 <h2>Preencha os dados dos seus jogadores favoritos e monte o melhor time de todos os tempos:</h2>
-                <CampoTexto
+                <Campo
                     obrigatorio={true}
                     label="Nome"
                     placeholder="Digite o nome" 
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}
                 />
-                <CampoTexto
+                <Campo
                     obrigatorio={true}
                     label="Equipe"
                     placeholder="Digite a equipe que ele jogou(a)"
                     valor={equipe}
                     aoAlterado={valor => setEquipe(valor)}
                 />
-                <CampoTexto
+                <Campo
                     label="Imagem"
                     placeholder="Digite o endereço da imagem"
                     valor={imagem}
@@ -67,14 +67,14 @@ const Formulario = ({ aoJogadorCadastrado, posicoes, cadastrarBanco }) => {
             }}>
                 <h2>E quem mais faria parte do elenco?</h2>
                 <h2>Adicione também um treinador e/ou jogadores reservas, selecionando-os ao lado:</h2>
-                <CampoTexto
+                <Campo
                     obrigatorio
                     label="Elenco"
                     placeholder="Digite Treinador ou Jogadores Reservas" 
                     valor={nomeBanco}
                     aoAlterado={valor => setNomeBanco(valor)}
                 />
-                <CampoTexto
+                <Campo
                     obrigatorio
                     label="Cor"
                     placeholder="Digite a cor desejada da equipe fora da quadra"
