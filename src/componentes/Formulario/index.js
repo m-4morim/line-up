@@ -76,6 +76,7 @@ const Formulario = ({ aoJogadorCadastrado, posicoes, cadastrarBanco }) => {
                 />
                 <Campo
                     obrigatorio
+                    type='color'
                     label="Cor"
                     placeholder="Digite a cor desejada da equipe fora da quadra"
                     valor={corEquipe}

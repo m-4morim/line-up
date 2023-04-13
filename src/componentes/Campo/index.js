@@ -1,6 +1,6 @@
 import './Campo.css'
 
-const Campo = ({ label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
+const Campo = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
 
     const placeholderModificada = `${placeholder}`
 
@@ -9,11 +9,17 @@ const Campo = ({ label, placeholder, valor, aoAlterado, obrigatorio = false }) =
     }
 
     return (
-        <div className="campo">
+        <div className={`campo campo-${type}`}>
             <label>
                 {label}
             </label>
-            <input value={valor} onChange={aoDigitado} required={obrigatorio} placeholder={placeholderModificada}/>
+            <input
+                type={type}
+                value={valor}
+                onChange={aoDigitado}
+                required={obrigatorio}
+                placeholder={placeholderModificada}
+            />
         </div>
     )
 }
