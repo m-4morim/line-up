@@ -1,4 +1,4 @@
-import { AiFillCloseCircle } from 'react-icons/ai';
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import './Jogador.css'
 
 const Jogador = ({ jogador, corDeFundo, aoDeletar }) => {
@@ -14,6 +14,9 @@ const Jogador = ({ jogador, corDeFundo, aoDeletar }) => {
         <div className='rodape'>
             <h4>{jogador.nome}</h4>
             <h5>{jogador.equipe}</h5>
+            <div className='favoritar'>
+                {jogador.favorito ? <AiFillHeart /> : <AiOutlineHeart />}
+            </div>
         </div>
     </div>)
 }
