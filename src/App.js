@@ -59,6 +59,13 @@ function App() {
   function cadastrarBanco(banco) {
     setPosicoes([ ...posicoes, { ...banco, id: uuidv4() } ])
   }
+
+  function resolverFavorito(id) {
+    setJogadores(jogadores.map(jogador => {
+      if(jogador.id === id) jogador.favorito = !jogador.favorito;
+      return jogador
+    }))
+  }
   
   return (
     <div className="App">
@@ -71,6 +78,7 @@ function App() {
 
       {posicoes.map((posicao, indice) =>
         <Posicao
+          aoFavoritar={resolverFavorito}
           mudarCor={mudarCorDaPosicao}
           key={indice}
           posicao={posicao}

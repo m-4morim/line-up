@@ -2,7 +2,7 @@ import Jogador from '../Jogador'
 import './Posicao.css'
 import hexToRgba from 'hex-to-rgba'
 
-const Posicao = ({ posicao, jogadores, aoDeletar, mudarCor }) => {
+const Posicao = ({ posicao, jogadores, aoDeletar, mudarCor, aoFavoritar }) => {
 
     const css = { backgroundColor: hexToRgba(posicao.cor, '0.6') }
     return (
@@ -11,7 +11,15 @@ const Posicao = ({ posicao, jogadores, aoDeletar, mudarCor }) => {
             <h3 style={{ borderColor: posicao.cor }}>{posicao.nome}</h3>
             <div className='jogadores'>
                 {jogadores.map((jogador, indice) => {
-                    return <Jogador key={indice} jogador={jogador} corDeFundo={posicao.cor} aoDeletar={aoDeletar} />;
+                    return (
+                        <Jogador
+                            key={indice}
+                            jogador={jogador}
+                            corDeFundo={posicao.cor}
+                            aoDeletar={aoDeletar}
+                            aoFavoritar={aoFavoritar}
+                        />
+                    );
                 })}
             </div>
         </section>
