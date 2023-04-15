@@ -3,11 +3,11 @@
   <h1>Line-up</h1>
   <div align="center">
    <img src="https://img.shields.io/github/last-commit/m-4morim/line-up?logo=git"/>
-   <img src="https://img.shields.io/badge/status-developing-yellow"/>
+   <img src="https://img.shields.io/badge/status-completed-brightgreen"/>
    <img src="https://img.shields.io/badge/deploy-online-brightgreen?logo=vercel"/>
   </div><br>
 
-![Print](./public/imagens/print.png)
+![Print](./public/imagens/print2.png)
   <blockquote>Projeto construído em uma resolução de tela desktop 2560px por 1080, porém possui design responsivo de acordo com o dispositivo.</blockquote><br>
 
   <p>Meu propósito nesse projeto se baseou na interatividade do usuário, onde eu o convido para inserir dados no input e assim alterar a estrutura da página com a criação de cards.</p>
@@ -24,13 +24,16 @@
   <div>
    <p>Os seguintes recursos foram implementados para a interatividade do usuário:</p>
    <ul>
+     <li>Instalar dependências;</li>
+     <li>One-way data binding;</li>
      <li>Componentes funcionais;</li>
-     <li>Dependências do projeto;</li>
-     <li>Utilização de props;</li>
+     <li>Utilização de props e closure;</li>
      <li>Manipulação de array com .map e .filter;</li>
+     <li>Export e Export default;</li>
      <li>Gerenciar componente com useState;</li>
      <li>Renderização condicional;</li>
-     <li>Depurar o código com debugger.</li>
+     <li>Depurar o código com debugger;</li>
+     <li>Refatorar o código e manter sua execução primária.</li>
    </ul>
   </div>
   <div align="center">
@@ -43,6 +46,6 @@
  
  ##
  <footer>
-  <p>O próximo passo é implementar algumas outras funcionalidades, como a opção de editar e deletar um card após criado. Além disso, criar o input 'equipe' com opções selecionáveis de times já com a configuração específica do card (cores e escudo).</p>
+  <p>Apesar de completo, o projeto ainda pode receber novas funcionalidades. Um próximo passo pode ser criar o input 'equipe' com opções selecionáveis de times já com a configuração específica do card (escudo).</p>
  </footer>
 </html>
